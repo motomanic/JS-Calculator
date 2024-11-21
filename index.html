@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Design</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>      
+
+      <div class="calculator">
+        <input placeholder="0" id="result" readonly>
+        <div class="keys">
+
+            <button onclick="clearContent('')" class="opt1">del</button>
+            <button class="opt1">()</button>
+            <button onclick="displayContent('%')"class="opt1">%</button>
+            <button onclick="displayContent('/')"class="opt">/</button>
+            <button onclick="displayContent('7')">7</button>
+            <button onclick="displayContent('8')">8</button>
+            <button onclick="displayContent('9')">9</button>
+            <button onclick="displayContent('*')" class="opt">*</button>
+            <button onclick="displayContent('4')">4</button>
+            <button onclick="displayContent('5')">5</button>
+            <button onclick="displayContent('6')">6</button>
+            <button onclick="displayContent('-')"class="opt">-</button>
+            <button onclick="displayContent('1')">1</button>
+            <button onclick="displayContent('2')">2</button>
+            <button onclick="displayContent('3')">3</button>
+            <button onclick="displayContent('+')"class="opt">+</button>
+            <!-- <button><i class="fa-solid fa-calculator" style="color: #f0f0f0;"></i></button> -->
+            <button onclick=" removeContent()" class="opt1">⌫</button>
+            <button onclick="displayContent('0')">0</button>
+            <button onclick="displayContent('.')">.</button>
+            <button onclick="resultContent()">=</button>
+        </div>
+      </div>
+</body>
+<script src="./main.js"></script>
+
+</html>
